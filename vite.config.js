@@ -5,12 +5,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api/hardware': {
+      '^/api/hardware$': {
         target: 'https://hardware-api-calls.onrender.com',
         changeOrigin: true,
         rewrite: (path) => '/api/gethardware-data'
       },
-      '/api/hardware-test-result': {
+      '^/api/hardware-test-result$': {
         target: 'https://hardware-api-calls.onrender.com',
         changeOrigin: true,
         rewrite: (path) => '/api/hardware-test-result'
