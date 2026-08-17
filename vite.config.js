@@ -9,6 +9,11 @@ export default defineConfig({
         target: 'https://hardware-api-calls.onrender.com',
         changeOrigin: true,
         rewrite: (path) => '/api/gethardware-data'
+      },
+      '/api/hardware-test-result': {
+        target: 'https://hardware-api-calls.onrender.com',
+        changeOrigin: true,
+        rewrite: (path) => '/api/hardware-test-result'
       }
     }
   }

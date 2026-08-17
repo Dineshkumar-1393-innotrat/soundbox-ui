@@ -7,3 +7,9 @@
   to = "https://hardware-api-calls.onrender.com/api/gethardware-data"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/api/hardware-test-result"
+  to = "https://hardware-api-calls.onrender.com/api/hardware-test-result"
+  status = 200
+  force = true
